@@ -1,12 +1,96 @@
-/* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Open Sans', sans-serif; */
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
 
-/*
-COLORS
+header, h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #2B4E80;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.column-one, .woody-img-section {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  height: 25em;
+  padding: 2em;
+}
+
+.woody-img-section {
+  height: 29em;
+  padding: 0em;
+}
+
+.column-one {
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #E6ECF4;
+}
+
+.input-area {
+  align-items: center;
+  width: 100%;
+}
+
+.question-input, .submit-button {
+  height: 3em;
+  text-align: center;
+  font-size: .8em;
+}
+
+.question-input {
+  width: 99%;
+  color: #2B4E80;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #2B4E80;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #1C3455;
+}
+
+.clear-button {
+  background-color: #D0CDCD;
+  width: 15%;
+  height: 2.5em;
+  font-size: .8em;
+}
+
+.clear-button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eight-ball-section {
+  display: flex;
+  justify-content: center;
+}
+
+.woody-img {
+  width: 70%;
+  height: 100%;
+}
+
+.eight-ball-img {
+  width: 50%;
+  height: 50%;
+}
+/* COLORS
 H1, Get answer button, text in input field: #2B4E80;
 Get answer button disabled: #607AA0;
 Get answer button hover: #1C3455;
 light blue background: #E6ECF4;
 clear button: #DE4841;
-clear button disabled: #D0CDCD
-*/
+clear button disabled: #D0CDCD */
