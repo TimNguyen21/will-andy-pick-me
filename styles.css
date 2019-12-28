@@ -3,7 +3,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-header, h1 {
+header,
+h1 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -16,7 +17,8 @@ main {
   height: 50%;
 }
 
-.column-one, .woody-img-section {
+.column-one,
+.woody-img-section {
   display: flex;
   justify-content: center;
   width: 35%;
@@ -40,7 +42,8 @@ main {
   width: 100%;
 }
 
-.question-input, .submit-button {
+.question-input,
+.submit-button {
   height: 3em;
   text-align: center;
   font-size: .8em;
@@ -49,6 +52,11 @@ main {
 .question-input {
   width: 99%;
   color: #2B4E80;
+}
+
+.user-question,
+.user-answer {
+  font-size: 2em;
 }
 
 .answer-section {
@@ -63,16 +71,24 @@ main {
   color: white;
 }
 
-submit-button.disabled {
-  background-color: black;
+.submit-button:disabled {
+  background-color: #607AA0;
+}
+
+.submit-button:disabled:hover {
+  background-color: #607AA0;
 }
 
 .submit-button:hover {
   background-color: #1C3455;
 }
 
-.clear-button {
+.clear-button:disabled {
   background-color: #D0CDCD;
+}
+
+.clear-button {
+  background-color: #DE4841;
   width: 15%;
   height: 2.5em;
   font-size: .8em;
@@ -97,9 +113,11 @@ submit-button.disabled {
   width: 50%;
   height: 50%;
 }
+
 .hide {
   display: none;
 }
+
 /* COLORS
 H1, Get answer button, text in input field: #2B4E80;
 Get answer button disabled: #607AA0;

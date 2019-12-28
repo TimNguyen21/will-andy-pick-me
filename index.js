@@ -6,15 +6,29 @@ var submitButton = document.querySelector('.submit-button');
 var clearButton = document.querySelector('.clear-button');
 var eightBall = document.querySelector('.eight-ball-section');
 
+submitButton.disabled = true;
+clearButton.disabled = true;
 
 submitButton.addEventListener('click', submitAnswer);
 clearButton.addEventListener('click', clearForm);
+questionInput.addEventListener('keyup', enableSubmit);
+
+function enableSubmit() {
+  if (questionInput.value == '') {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false
+  }
+}
 
 function submitAnswer() {
   var randomNumber = Math.floor((Math.random()*possibleAnswerArray.length))
   userQuestion.innerText = questionInput.value;
   userAnswer.innerText = possibleAnswerArray[randomNumber];
   answerOutput();
+  clearButton.disabled = false;
+  submitButton.disabled = true;
+  questionInput.disabled = true;
 }
 
 function answerOutput() {
@@ -28,4 +42,7 @@ function clearForm(){
   eightBall.classList.remove('hide');
   userQuestion.classList.add('hide');
   userAnswer.classList.add('hide');
+  clearButton.disabled = true;
+  submitButton.disabled = true;
+  questionInput.disabled = false;
 }
