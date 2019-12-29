@@ -1,6 +1,5 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  font-family: 'Open Sans', sans-serif;
 }
 
 header,
@@ -57,6 +56,8 @@ main {
 .user-question,
 .user-answer {
   font-size: 2em;
+  margin: .5em;
+  text-align: center;
 }
 
 .answer-section {
@@ -115,14 +116,14 @@ main {
 .save-result-section {
   margin: auto;
   margin-top: 1em;
-  width: 50%;
-  height: 10em;
+  width: 40%;
+  height: 15em;
   overflow-y: auto;
 }
 
 .save-question,
 .save-answer {
-  margin: .5em;
+  margin: .2em;
 }
 
 .save-question {

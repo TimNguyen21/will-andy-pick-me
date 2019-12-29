@@ -9,7 +9,8 @@ var eightBall = document.querySelector('.eight-ball-section');
 var saveSection = document.querySelector('.save-result-section');
 var saveResult = document.querySelector('.save-result');
 var cardHTML = saveResult.innerHTML;
-
+var saveQuestion = '';
+var saveAnswer = '';
 
 submitButton.disabled = true;
 clearButton.disabled = true;
@@ -28,7 +29,7 @@ function createSave() {
   newArticle.querySelector('.save-question').innerText = saveQuestion;
   newArticle.querySelector('.save-answer').innerText = saveAnswer;
   saveSection.insertBefore(newArticle, saveSection.childNodes[0]);
-  favoriteButton.disabled = true;
+  clearForm();
 }
 
 function removeSaveCard() {
@@ -52,8 +53,7 @@ function pressEnterSumbit() {
   submitButton.click();
   }
 }
-var saveQuestion = '';
-var saveAnswer = '';
+
 function submitAnswer() {
   var randomNumber = Math.floor((Math.random()*possibleAnswerArray.length))
   userQuestion.innerText = questionInput.value;
@@ -74,7 +74,7 @@ function answerOutput() {
   questionInput.value = "";
 }
 
-function clearForm(){
+function clearForm() {
   eightBall.classList.remove('hide');
   userQuestion.classList.add('hide');
   userAnswer.classList.add('hide');
