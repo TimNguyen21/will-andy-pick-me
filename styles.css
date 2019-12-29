@@ -83,7 +83,8 @@ main {
   background-color: #1C3455;
 }
 
-.clear-button:disabled {
+.clear-button:disabled,
+.save-favorite-button:disabled {
   background-color: #D0CDCD;
 }
 
@@ -94,14 +95,70 @@ main {
   font-size: .8em;
 }
 
-.clear-button-section {
+.clear-save-button-section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.save-favorite-button {
+  background-color: #bef3c3;
+  width: 25%;
+  height: 2.5em;
+  font-size: .8em;
 }
 
 .eight-ball-section {
   display: flex;
   justify-content: center;
+}
+
+.save-result-section {
+  margin: auto;
+  margin-top: 1em;
+  width: 50%;
+  height: 10em;
+  overflow-y: auto;
+}
+
+.save-question,
+.save-answer {
+  margin: .5em;
+}
+
+.save-question {
+  font-weight: bold;
+}
+
+.save-answer {
+  font-style: italic;
+}
+
+.delete-save-button {
+  width: 10em;
+  height: 2em;
+  margin: 1em 0em;
+  text-transform: capitalize;
+  font-size: .7em;
+  background-color: #2B4E80;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B4E80;
+}
+
+.save-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 99%;
+  border: 2px solid black;
+  border-radius: 2em;
+  background-color: #E6ECF4;
 }
 
 .woody-img {
