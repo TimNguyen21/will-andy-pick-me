@@ -3,11 +3,17 @@
 }
 
 header,
-h1 {
+h1,
+h2 {
   display: flex;
   justify-content: center;
   width: 100%;
   color: #2B4E80;
+}
+
+h2 {
+  text-align: center;
+  margin: .5em 0em;
 }
 
 main {
@@ -115,10 +121,12 @@ main {
 
 .save-result-section {
   margin: auto;
-  margin-top: 1em;
+  /* margin-top: 1em; */
   width: 40%;
   height: 15em;
   overflow-y: auto;
+  background-color: #2B4E80;
+  border-radius: 1em;
 }
 
 .save-question,
